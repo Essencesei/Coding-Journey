@@ -18,6 +18,10 @@ body{
     position: fixed;
     transition: .5s ease-in-out;
 }
+.menuicon img{
+    height: 48px;
+    width: 48px;
+}
 
 
 body:hover{
