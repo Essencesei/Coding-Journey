@@ -1,17 +1,13 @@
 $("document").ready(function(){
-    
-    $(".menuicon").click(500,function(){
-        $(".menuicon").fadeToggle(100, function(){
-            $(".nav").toggle("slide", {direction:'right'});
-            
-
-        });      
+    document.querySelectorAll('a[href^="#"]').forEach(anchor =>{
+        anchor.addEventListener("click", function(e){
+            e.preventDefault();
+            document.querySelector(this.getAttribute("href")).scrollIntoView({
+                behavior : "smooth"
+            })
+        })
     })
-
-    $(".nav").click(500, function(){
-        $(this).toggle("slide",{direction:"right"},500, function(){
-            $(".menuicon").fadeToggle();
-        });
-    });
+    
+   
        
 })
