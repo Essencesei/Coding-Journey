@@ -18,20 +18,15 @@ body{
     position: fixed;
     transition: .5s ease-in-out;
 }
-<<<<<<< HEAD
 .menuicon:hover{
     cursor: pointer;
-=======
-.menuicon img{
-    height: 48px;
-    width: 48px;
->>>>>>> 497f296115ca6cc433237b617a3fa6eaefc9e56c
 }
 
 
 body:hover{
     cursor: default;
 }
+
 .gridContainer{
     display: grid;
     grid-template-columns: 250px 1fr 1fr 250px;

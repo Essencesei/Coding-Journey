@@ -7,10 +7,10 @@ $("document").ready(function(){
         });      
     })
 
-    $(".nav").click(function(){
-        $(this).slideToggle();
-        $(".menuicon").css("transform","scale(1)");
-        $(".menuicon").toggle();
+    $(".nav").click(500, function(){
+        $(this).slideToggle(500, function(){
+            $(".menuicon").fadeToggle();
+        });
     });
+       
 })
-
